@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - AZoom Car Rental</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">AZoom</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cars.html">Our Cars</a>
+      <a href="booking.html">Reserve</a>
+      <a href="payment.html">Pay Bill</a>
+      <a href="login.html" id="loginLink">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Login</h1>
+    <form id="loginForm">
+      <label for="username">Username</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+
+      <br><br>
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 AZoom Car Rental · Electric cars for everyone</p>
+  </footer>
+
+  <dialog id="msgDialog">
+    <p id="msgText"></p>
+    <button id="msgClose" class="btn">OK</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

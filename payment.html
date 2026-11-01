@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZoom Car Rental</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">AZoom</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cars.html">Our Cars</a>
+      <a href="booking.html">Reserve</a>
+      <a href="payment.html">Pay Bill</a>
+      <a href="login.html" id="loginLink">Login</a>
+    </nav>
+  </header>
+
+<main>
+  <h1>Final Bill</h1>
+  <table>
+    <tr><th>Item</th><th>Amount</th></tr>
+    <tr>
+  <tr>
+  <td>Booking reference</td> <td id="billRef"></td></tr>
+    <tr><td>Rental cost</td><td id="billRental">$0</td></tr>
+    <tr><td>Damage charges</td><td id="billDamage">$0</td></tr>
+    <tr><td><strong>Total</strong></td><td id="billTotal" class="total">$0</td></tr>
+  </table>
+    <button type="button" id="detailsBtn" class="btn">View details</button>
+
+  <div id="billDetails" hidden>
+    <h3>Bill details</h3>
+    <table>
+      <thead>
+        <tr><th>Item</th><th>Details</th><th>Amount</th></tr>
+      </thead>
+      <tbody id="detailRows"></tbody>
+    </table>
+  </div>
+  <br>
+    <form id="paymentForm">
+    <label for="payCard">Saved credit card</label>
+    <input type="text" id="payCard" readonly>
+
+    <label for="payCvv">CVV (to confirm payment)</label>
+    <input type="text" id="payCvv" maxlength="3" required>
+
+    <br><br>
+    <button type="submit" class="btn">Pay Now</button>
+  </form>
+</main>
+
+
+  <footer>
+    <p>&copy; 2026 AZoom Car Rental · Electric cars for everyone</p>
+  </footer>
+
+  <dialog id="msgDialog">
+    <p id="msgText"></p>
+    <button id="msgClose" class="btn">OK</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+    
+</body>
+</html>

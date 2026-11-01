@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZoom Car Rental</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">AZoom</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cars.html">Our Cars</a>
+      <a href="booking.html">Reserve</a>
+      <a href="payment.html">Pay Bill</a>
+      <a href="login.html" id="loginLink">Login</a>
+    </nav>
+  </header>
+
+<main>
+  <h1>Our Electric Cars</h1>
+
+  <div class="filter-bar">
+    <div>
+      <label for="carSearch">Search</label>
+      <input type="text" id="carSearch" placeholder="e.g. Tesla">
+    </div>
+
+    <div>
+      <label for="typeFilter">Type</label>
+      <select id="typeFilter">
+        <option value="">All types</option>
+        <option value="economy">Economy</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="mpv">MPV / Van</option>
+        <option value="luxury">Luxury / Sports</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="seatFilter">Seats</label>
+      <select id="seatFilter">
+        <option value="">Any</option>
+        <option value="2">2-Seater</option>
+        <option value="4-5">4-5 Seater</option>
+        <option value="6-7">6-7 Seater</option>
+        <option value="8+">8+ Seater</option>
+      </select>
+    </div>
+  </div>
+  <div class="card-grid">
+
+<div class="card" data-type="economy" data-seats="4-5">
+  <img src="images/leaf.jpg" alt="Nissan Leaf">
+  <h3>Nissan Leaf</h3>
+  <p class="car-sub">Hatchback · Automatic · Range 270 km</p>
+  <div class="tags">
+    <span class="tag">Economy</span>
+    <span class="tag">5 seats</span>
+  </div>
+  <p class="car-price">$95<span>/day</span></p>
+  <p class="car-sub">$560/week · $1980/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=leaf" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="leaf">Details</button>
+  </div>
+</div>
+
+<div class="card" data-type="sedan" data-seats="4-5">
+  <img src="images/tesla.jpg" alt="Tesla Model 3">
+  <h3>Tesla Model 3</h3>
+  <p class="car-sub">Sedan · Automatic · Range 513 km</p>
+  <div class="tags">
+    <span class="tag">Sedan</span>
+    <span class="tag">5 seats</span>
+  </div>
+  <p class="car-price">$160<span>/day</span></p>
+  <p class="car-sub">$950/week · $3390/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=tesla" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="tesla">Details</button>
+  </div>
+</div>
+
+<div class="card" data-type="suv" data-seats="4-5">
+  <img src="images/ioniq.jpg" alt="Hyundai Ioniq 5">
+  <h3>Hyundai Ioniq 5</h3>
+  <p class="car-sub">Crossover · Automatic · Range 480 km</p>
+  <div class="tags">
+    <span class="tag">SUV</span>
+    <span class="tag">5 seats</span>
+  </div>
+  <p class="car-price">$150<span>/day</span></p>
+  <p class="car-sub">$890/week · $3190/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=ioniq" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="ioniq">Details</button>
+  </div>
+</div>
+
+<div class="card" data-type="suv" data-seats="4-5">
+  <img src="images/atto3.jpg" alt="BYD Atto 3">
+  <h3>BYD Atto 3</h3>
+  <p class="car-sub">Compact SUV · Automatic · Range 420 km</p>
+  <div class="tags">
+    <span class="tag">SUV</span>
+    <span class="tag">5 seats</span>
+  </div>
+  <p class="car-price">$125<span>/day</span></p>
+  <p class="car-sub">$740/week · $2590/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=atto3" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="atto3">Details</button>
+  </div>
+</div>
+
+<div class="card" data-type="economy" data-seats="2">
+  <img src="images/smart.jpg" alt="Smart EQ fortwo">
+  <h3>Smart EQ fortwo</h3>
+  <p class="car-sub">City Car · Automatic · Range 130 km</p>
+  <div class="tags">
+    <span class="tag">Economy</span>
+    <span class="tag">2 seats</span>
+  </div>
+  <p class="car-price">$70<span>/day</span></p>
+  <p class="car-sub">$420/week · $1490/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=smart" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="smart">Details</button>
+  </div>
+</div>
+
+<div class="card" data-type="sedan" data-seats="4-5">
+  <img src="images/seal.jpg" alt="BYD Seal">
+  <h3>BYD Seal</h3>
+  <p class="car-sub">Sedan · Automatic · Range 570 km</p>
+  <div class="tags">
+    <span class="tag">Sedan</span>
+    <span class="tag">5 seats</span>
+  </div>
+  <p class="car-price">$165<span>/day</span></p>
+  <p class="car-sub">$980/week · $3490/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=seal" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="seal">Details</button>
+  </div>
+</div>
+
+<div class="card" data-type="suv" data-seats="6-7">
+  <img src="images/ev9.jpg" alt="Kia EV9">
+  <h3>Kia EV9</h3>
+  <p class="car-sub">Large SUV · Automatic · Range 505 km</p>
+  <div class="tags">
+    <span class="tag">SUV</span>
+    <span class="tag">7 seats</span>
+  </div>
+  <p class="car-price">$210<span>/day</span></p>
+  <p class="car-sub">$1260/week · $4490/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=ev9" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="ev9">Details</button>
+  </div>
+</div>
+
+<div class="card" data-type="mpv" data-seats="6-7">
+  <img src="images/m6.jpg" alt="BYD M6">
+  <h3>BYD M6</h3>
+  <p class="car-sub">MPV · Automatic · Range 420 km</p>
+  <div class="tags">
+    <span class="tag">MPV</span>
+    <span class="tag">7 seats</span>
+  </div>
+  <p class="car-price">$140<span>/day</span></p>
+  <p class="car-sub">$830/week · $2990/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=m6" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="m6">Details</button>
+  </div>
+</div>
+
+<div class="card" data-type="mpv" data-seats="8+">
+  <img src="images/eqv.jpg" alt="Mercedes-Benz EQV">
+  <h3>Mercedes-Benz EQV</h3>
+  <p class="car-sub">Van · Automatic · Range 356 km</p>
+  <div class="tags">
+    <span class="tag">MPV</span>
+    <span class="tag">8 seats</span>
+  </div>
+  <p class="car-price">$230<span>/day</span></p>
+  <p class="car-sub">$1380/week · $4890/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=eqv" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="eqv">Details</button>
+  </div>
+</div>
+
+<div class="card" data-type="mpv" data-seats="8+">
+  <img src="images/evito.jpg" alt="Mercedes-Benz eVito Tourer">
+  <h3>Mercedes-Benz eVito Tourer</h3>
+  <p class="car-sub">Van · Automatic · Range 358 km</p>
+  <div class="tags">
+    <span class="tag">MPV</span>
+    <span class="tag">9 seats</span>
+  </div>
+  <p class="car-price">$220<span>/day</span></p>
+  <p class="car-sub">$1320/week · $4690/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=evito" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="evito">Details</button>
+  </div>
+</div>
+
+<div class="card" data-type="luxury" data-seats="2">
+  <img src="images/cyberster.jpg" alt="MG Cyberster">
+  <h3>MG Cyberster</h3>
+  <p class="car-sub">Roadster · Automatic · Range 443 km</p>
+  <div class="tags">
+    <span class="tag">Luxury</span>
+    <span class="tag">2 seats</span>
+  </div>
+  <p class="car-price">$280<span>/day</span></p>
+  <p class="car-sub">$1680/week · $5990/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=cyberster" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="cyberster">Details</button>
+  </div>
+</div>
+
+<div class="card" data-type="luxury" data-seats="4-5">
+  <img src="images/taycan.jpg" alt="Porsche Taycan">
+  <h3>Porsche Taycan</h3>
+  <p class="car-sub">Sports Sedan · Automatic · Range 590 km</p>
+  <div class="tags">
+    <span class="tag">Luxury</span>
+    <span class="tag">4 seats</span>
+  </div>
+  <p class="car-price">$350<span>/day</span></p>
+  <p class="car-sub">$2100/week · $7490/month</p>
+  <div class="card-buttons">
+    <a href="booking.html?car=taycan" class="btn">Reserve</a>
+    <button type="button" class="details-link" data-car="taycan">Details</button>
+  </div>
+</div>
+  </div>
+   <p id="noResults" hidden>No cars match your search. Try another type or seat option.</p>
+</main>
+
+<dialog id="carDialog">
+  <h2 id="detailName"></h2>
+
+  <section class="detail-section">
+    <h3>1. Overview</h3>
+    <p id="detailOverview"></p>
+  </section>
+
+  <section class="detail-section">
+    <h3>2. Car Specifications</h3>
+    <div class="spec-grid">
+      <div><span class="spec-label">Seats</span><span id="specSeats"></span></div>
+      <div><span class="spec-label">Luggage</span><span id="specLuggage"></span></div>
+      <div><span class="spec-label">Range</span><span id="specRange"></span></div>
+      <div><span class="spec-label">Transmission</span><span>Automatic</span></div>
+      <div><span class="spec-label">Car type</span><span id="specType"></span></div>
+      <div><span class="spec-label">Fuel type</span><span>Electric</span></div>
+    </div>
+  </section>
+
+  <section class="detail-section">
+    <h3>3. Features &amp; Amenities</h3>
+    <ul id="detailFeatures" class="feature-list"></ul>
+  </section>
+
+  <section class="detail-section">
+    <h3>4. Rental Pricing</h3>
+    <div class="price-row"><span>Daily rental</span><strong id="priceDaily"></strong></div>
+    <div class="price-row"><span>Weekly rental</span><strong id="priceWeekly"></strong></div>
+    <div class="price-row"><span>Monthly rental</span><strong id="priceMonthly"></strong></div>
+    <p class="car-sub">Final bill = rental cost + any damage found at inspection. Payment by credit card only.</p>
+  </section>
+
+  <section class="detail-section">
+    <h3>5. Rental Requirements &amp; Policies</h3>
+    <p><strong>Driver requirements</strong><br>21 years or older with a valid driving licence held for at least 2 years.</p>
+    <p><strong>Reservation &amp; payment</strong><br>Reserve online with a credit card. The final bill is also paid by credit card only.</p>
+    <p><strong>Pickup &amp; return</strong><br>Collect the car at the AZoom office of your chosen branch. Return it to that branch's designated car park.</p>
+    <p><strong>Inspection &amp; damages</strong><br>Our staff inspect every returned car. Any damage found is added to your final bill.</p>
+  </section>
+
+  <div class="dialog-buttons">
+    <button type="button" class="btn btn-outline" id="detailClose">Close</button>
+    <a href="#" class="btn" id="detailReserve">Reserve this car</a>
+  </div>
+</dialog>
+
+
+  <footer>
+    <p>&copy; 2026 AZoom Car Rental · Electric cars for everyone</p>
+  </footer>
+
+  <dialog id="msgDialog">
+    <p id="msgText"></p>
+    <button id="msgClose" class="btn">OK</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZoom Car Rental</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">AZoom</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cars.html">Our Cars</a>
+      <a href="booking.html">Reserve</a>
+      <a href="payment.html">Pay Bill</a>
+      <a href="login.html" id="loginLink">Login</a>
+    </nav>
+  </header>
+
+  <main>
+  <h1>Reserve a Car</h1>
+
+  <div class="booking-layout">
+
+  
+  <form id="bookingForm">
+    <label for="car">Choose a car</label>
+    <select id="car" required>
+      <option value="">-- Select --</option>
+      <option value="leaf">Nissan Leaf</option>
+      <option value="tesla">Tesla Model 3</option>
+      <option value="ioniq">Hyundai Ioniq 5</option>
+      <option value="atto3">BYD Atto 3</option>
+      <option value="smart">Smart EQ fortwo</option>
+      <option value="seal">BYD Seal</option>
+      <option value="ev9">Kia EV9</option>
+      <option value="m6">BYD M6</option>
+      <option value="eqv">Mercedes-Benz EQV</option>
+      <option value="evito">Mercedes-Benz eVito Tourer</option>
+      <option value="cyberster">MG Cyberster</option>
+      <option value="taycan">Porsche Taycan</option>
+    </select>
+
+    <label for="period">Rental period</label>
+    <select id="period" required>
+      <option value="">-- Select --</option>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+    </select>
+
+    <div id="durationBox" hidden>
+      <label for="duration" id="durationLabel">How many days?</label>
+      <input type="number" id="duration" min="1" value="1">
+    </div>
+
+    <label for="branch">Pickup branch</label>
+    <select id="branch">
+      <option>Kallang Branch</option>
+      <option>Jurong East Branch</option>
+    </select>
+
+    <label for="pickupDate">Pickup date</label>
+    <input type="date" id="pickupDate" required>
+
+    <h3>Credit Card Details</h3>
+    <label for="cardName">Name on card</label>
+    <input type="text" id="cardName" required>
+
+    <label for="cardNumber">Card number (16 digits)</label>
+    <input type="text" id="cardNumber" maxlength="19" required>
+
+    <label for="cardExpiry">Expiry (MM/YY)</label>
+    <input type="text" id="cardExpiry" maxlength="5" placeholder="08/28" required>
+
+    <label for="cardCvv">CVV</label>
+    <input type="text" id="cardCvv" maxlength="3" required>
+
+    <p>Estimated rental: <span id="totalPrice" class="total">$0</span></p>
+    <button type="submit" class="btn">Confirm Reservation</button>
+  </form>
+  <!-- Car info panel (right side) -->
+    <aside id="carInfo" class="car-info" hidden>
+      <img id="carImage" src="" alt="">
+      <h3 id="carName"></h3>
+      <p class="car-sub" id="carSub"></p>
+      <div class="tags" id="carTags"></div>
+      <p id="carDesc"></p>
+      <p class="car-price" id="carPrice"></p>
+      <p class="car-sub" id="carOtherPrices"></p>
+    </aside>
+  </div>
+</main>
+
+
+  <footer>
+    <p>&copy; 2026 AZoom Car Rental · Electric cars for everyone</p>
+  </footer>
+
+  <dialog id="msgDialog">
+    <p id="msgText"></p>
+    <button id="msgClose" class="btn">OK</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+    
+</body>
+</html>

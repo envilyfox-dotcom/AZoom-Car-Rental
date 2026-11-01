@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZoom Car Rental</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">AZoom</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cars.html">Our Cars</a>
+      <a href="booking.html">Reserve</a>
+      <a href="payment.html">Pay Bill</a>
+      <a href="login.html" id="loginLink">Login</a>
+    </nav>
+  </header>
+
+ <main>
+  <h1>Car Inspection</h1>
+  <form id="inspectionForm">
+    <label for="bookingRef">Booking reference</label>
+    <input type="text" id="bookingRef" readonly>
+
+    <label for="carPark">Returned at car park</label>
+    <select id="carPark">
+      <option>Kallang – Basement 1</option>
+      <option>Jurong East – Level 2</option>
+    </select>
+
+    <h3>Damages found</h3>
+    <label><input type="checkbox" class="damage" value="150" data-name="Scratch"> Scratch ($150)</label>
+    <label><input type="checkbox" class="damage" value="400" data-name="Dent"> Dent ($400)</label>
+    <label><input type="checkbox" class="damage" value="350" data-name="Cracked windscreen"> Cracked windscreen ($350)</label>
+    <label><input type="checkbox" class="damage" value="100" data-name="Interior stain"> Interior stain ($100)</label>
+
+    <p>Damage charges: <span id="damageTotal" class="total">$0</span></p>
+    <button type="submit" class="btn">Generate Final Bill</button>
+  </form>
+</main>
+
+
+  <footer>
+    <p>&copy; 2026 AZoom Car Rental · Electric cars for everyone</p>
+  </footer>
+
+  <dialog id="msgDialog">
+    <p id="msgText"></p>
+    <button id="msgClose" class="btn">OK</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+    
+</body>
+</html>

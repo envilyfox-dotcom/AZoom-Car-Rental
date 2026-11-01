@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZoom Car Rental</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">AZoom</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cars.html">Our Cars</a>
+      <a href="booking.html">Reserve</a>
+      <a href="payment.html">Pay Bill</a>
+      <a href="login.html" id="loginLink">Login</a>
+    </nav>
+  </header>
+
+  <main>
+  <section class="hero">
+  <!-- The strip of photos -->
+  <div class="hero-slides" id="heroSlides">
+    <img src="images/leaf.jpg" alt="">
+    <img src="images/tesla.jpg" alt="">
+    <img src="images/ioniq.jpg" alt="">
+    <img src="images/atto3.jpg" alt="">
+    <img src="images/smart.jpg" alt="">
+    <img src="images/seal.jpg" alt="">
+    <img src="images/ev9.jpg" alt="">
+    <img src="images/m6.jpg" alt="">
+    <img src="images/eqv.jpg" alt="">
+    <img src="images/evito.jpg" alt="">
+    <img src="images/cyberster.jpg" alt="">
+    <img src="images/taycan.jpg" alt="">
+    <img src="images/leaf.jpg" alt="">   <!-- copy of the first photo, used for looping -->
+  </div>
+
+
+  <div class="hero-content">
+    <h1>Rent an Electric Car Today</h1>
+    <p>Daily, weekly or monthly rental. Reserve online with your credit card.</p>
+    <a href="booking.html" class="btn">Reserve Now</a>
+  </div>
+</section>
+
+  <section>
+    <h2>How It Works</h2>
+    <ol>
+      <li><strong>Reserve</strong> online using your credit card.</li>
+      <li><strong>Collect</strong> the car at our AZoom office.</li>
+      <li><strong>Return</strong> the car to the designated car park.</li>
+      <li><strong>Inspection</strong>: our staff check the car for damage.</li>
+      <li><strong>Pay</strong> the final bill (rental + any damages) by credit card.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Our Branches</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Kallang Branch</h3>
+        <p>21 Kallang Avenue</p>
+        <p>Return car park: Basement 1, EV Bays K1–K20</p>
+      </div>
+      <div class="card">
+        <h3>Jurong East Branch</h3>
+        <p>3 Gateway Drive</p>
+        <p>Return car park: Level 2, EV Bays J1–J20</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; 2026 AZoom Car Rental · Electric cars for everyone</p>
+  </footer>
+
+  <dialog id="msgDialog">
+    <p id="msgText"></p>
+    <button id="msgClose" class="btn">OK</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+    
+</body>
+</html>
